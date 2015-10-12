@@ -1,0 +1,391 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #943;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+body {
+    font-family: sans-serif;
+    background: #404043;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+
+    body .sadrzaj {
+        display: inline-block;
+        background: #FDFDFD;
+        text-align: left;
+        width: 950px;
+    }
+
+    body .sadrzaj .zaglavlje {
+        border-bottom: 4px solid #943;
+        background-color: #000;
+        padding: 5px;
+    }
+
+        body .sadrzaj .zaglavlje .logo {
+            background: url('../img/logo.png') center no-repeat;
+            display: block;
+            height: 75px;
+            width: 400px;
+        }
+        
+    body .sadrzaj .footer {
+        border-top: 4px solid #000;
+        background-color: #943;
+        text-align: center;
+        padding: 10px;
+        color: #FFF;
+    }
+    
+    body .sadrzaj .modul {
+        min-height: 400px;
+    }
+
+        body .sadrzaj form {
+            background-color: #F7F7F7;
+            border: 1px solid #999;
+            padding: 5px;
+        }
+
+        body .sadrzaj table {
+            border-collapse: collapse;
+        }
+        
+            body .sadrzaj table th,
+            body .sadrzaj table td {
+                text-align: left;
+                padding: 5px;
+            }
+
+                body .sadrzaj table th {
+                    font-weight: bold;
+                }
+
+        body .sadrzaj .glavni-menu {
+            padding: 5px;
+        }
+
+            body .sadrzaj .glavni-menu a {
+                border-bottom: 3px solid #000;
+                display: inline-block;
+                padding: 5px 15px;
+                color: #000;
+            }
+
+            body .sadrzaj .glavni-menu a:hover {
+                border-bottom: 3px solid #943;
+                color: #943;
+            }
+
+        body .sadrzaj input[type=text],
+        body .sadrzaj input[type=url],
+        body .sadrzaj input[type=email],
+        body .sadrzaj input[type=number],
+        body .sadrzaj input[type=password] {
+            background-color: #FDFDFD;
+            border: 1px solid #999;
+            padding: 5px 10px;
+            width: 85%;
+        }
+
+        body .sadrzaj input[type=submit],
+        body .sadrzaj input[type=button] {
+            background-color: #000;
+            border: 1px solid #999;
+            padding: 5px 25px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #FDFDFD;
+        }
+
+		.malo-dugme {
+			dsisplay: inline-block;
+			background-color: #000;
+			border: 1px solid #999;
+			padding: 3px 5px;
+			font-size: 10px;
+			cursor: pointer;
+			color: #FDFDFD;
+		}
+        
+        body .sadrzaj select {
+            background-color: #FDFDFD;
+            border: 1px solid #999;
+            padding: 5px;
+            width: 98%;
+        }
+
+    body .sadrzaj .modul {
+        padding: 5px;
+    }
+
+    .kategorije .kategorija {
+        margin: 0px 4px 5px 0px;
+        display: inline-block;
+        position: relative;
+        height: 120px;
+        width: 180px;
+    }
+
+        .kategorije .kategorija img {
+            position: absolute;
+            opacity: 0.8;
+            height: 100%;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+        }
+
+        .kategorije .kategorija h1 {
+            border-top: 4px solid #943;
+            padding: 1px 5px 5px 5px;
+            background-color: #943;
+            position: absolute;
+            font-size: 14px;
+            color: #FDFDFD;
+            height: auto;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+        }
+        
+    .kategorije .kategorija:hover img {
+        opacity: 1;
+    }
+
+    .kategorije .kategorija:hover h1 {
+        background-color: #000;
+        color: #FFF;
+        
+    }
+    
+    .spisak-knjiga {
+        padding: 5px 0px;
+    }
+
+        .spisak-knjiga .knjiga {
+            border: 1px solid #D8D8D8;
+            margin: 0px 5px 5px 0px;
+            display: inline-block;
+            position: relative;
+            height: 150px;
+            width: 303px;
+        }
+        
+        .spisak-knjiga .knjiga:hover {
+            background-color: #FDFDFD;
+            border: 1px solid #999;
+        }
+
+        .spisak-knjiga .knjiga .knjiga-slika {
+            position: absolute;
+            height: 140px;
+            width: 100px;
+            left: 5px;
+            top: 5px;
+        }
+        
+        .spisak-knjiga .knjiga .knjiga-detalji {
+            position: absolute;
+            font-size: 10px;
+            height: 140px;
+            width: 190px;
+            left: 110px;
+            top: 5px;
+        }
+
+            .spisak-knjiga .knjiga .knjiga-detalji .knjiga-naslov {
+                margin-bottom: 3px;
+                font-weight: bold;
+                padding: 3px 2px;
+                font-size: 12px;
+                display: block;
+                color: #943;
+            }
+            
+            .spisak-knjiga .knjiga:hover .knjiga-detalji .knjiga-naslov {
+                background-color: #943;
+                color: #FFF;
+            }
+            
+            .spisak-knjiga .knjiga .knjiga-detalji .knjiga-prevod {
+                margin-bottom: 5px;
+                padding-left: 2px;
+                font-size: 12px;
+                color: #404043;
+            }
+
+            .spisak-knjiga .knjiga .knjiga-detalji .knjiga-isbn,
+            .spisak-knjiga .knjiga .knjiga-detalji .knjiga-broj-strana,
+            .spisak-knjiga .knjiga .knjiga-detalji .knjiga-godina {
+                padding-left: 2px;
+                color: #000;
+            }
+
+            .spisak-knjiga .knjiga .knjiga-detalji .knjiga-autor {
+                padding-left: 2px;
+                margin-top: 5px;
+                color: #000;
+            }
+            
+                .spisak-knjiga .knjiga .knjiga-detalji .knjiga-autor a {
+                    text-decoration: underline;
+                    color: #943;
+                }
+                
+                .spisak-knjiga .knjiga .knjiga-detalji .knjiga-autor a:hover {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+            .spisak-knjiga .knjiga .knjiga-detalji .knjiga-kategorije {
+                padding-left: 2px;
+                margin-top: 5px;
+                color: #000;
+            }
+            
+                .spisak-knjiga .knjiga .knjiga-detalji .knjiga-kategorije a.kategorija-knjige {
+                    text-decoration: underline;
+                    display: inline-block;
+                    margin-right: 2px;
+                    color: #943;
+                }
+                
+                .spisak-knjiga .knjiga .knjiga-detalji .knjiga-kategorije a.kategorija-knjige:hover {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+        .knjiga-prikaz {
+            position: relative;
+            height: 220px;
+        }
+        
+        .knjiga-prikaz .knjiga-slika {
+            position: absolute;
+            height: 140px;
+            width: 100px;
+            left: 5px;
+            top: 5px;
+        }
+        
+        .knjiga-prikaz .knjiga-detalji {
+            position: absolute;
+            font-size: 14px;
+            left: 110px;
+            top: 5px;
+        }
+
+            .knjiga-prikaz .knjiga-detalji .knjiga-naslov {
+                margin-bottom: 3px;
+                font-weight: bold;
+                padding: 3px 2px;
+                font-size: 16px;
+                display: block;
+                color: #943;
+            }
+
+            .knjiga-prikaz .knjiga-detalji .knjiga-prevod {
+                margin-bottom: 5px;
+                padding-left: 2px;
+                font-size: 16px;
+                color: #404043;
+            }
+
+            .knjiga-prikaz .knjiga-detalji .knjiga-isbn,
+            .knjiga-prikaz .knjiga-detalji .knjiga-broj-strana,
+            .knjiga-prikaz .knjiga-detalji .knjiga-godina {
+                padding-left: 2px;
+                color: #000;
+            }
+
+            .knjiga-prikaz .knjiga-detalji .knjiga-autor {
+                padding-left: 2px;
+                margin-top: 5px;
+                color: #000;
+            }
+            
+                .knjiga-prikaz .knjiga-detalji .knjiga-autor a {
+                    text-decoration: underline;
+                    color: #943;
+                }
+                
+                .knjiga-prikaz .knjiga-detalji .knjiga-autor a:hover {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+            .knjiga-prikaz .knjiga-detalji .knjiga-kategorije {
+                padding-left: 2px;
+                margin-top: 5px;
+                color: #000;
+            }
+            
+                .knjiga-prikaz .knjiga-detalji .knjiga-kategorije a.kategorija-knjige {
+                    text-decoration: underline;
+                    display: inline-block;
+                    margin-right: 2px;
+                    color: #943;
+                }
+                
+                .knjiga-prikaz .knjiga-detalji .knjiga-kategorije a.kategorija-knjige:hover {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+    .komentari {
+        border-top: 1px solid #943;
+    }
+
+        .komentar {
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+
+        .komentar-korisnik {
+            font-weight: bold;
+            font-size: 14px;
+            color: #000;
+        }
+        
+        .komentar-datum-vreme {
+            font-size: 12px;
+            color: #404043;
+        }
+
+        .komentar-tekst {
+            text-align: justify;
+            font-size: 13px;
+            color: #404043;
+        }
+        
+        .polje-za-komentar {
+            background-color: #FDFDFD;
+            font-family: sans-serif;
+            border: 1px solid #999;
+            font-size: 12px;
+            height: 100px;
+            width: 500px;
+            padding: 5px;
+        }
+
+    .poruka {
+        background-color: #F7F7F7;
+        border: 1px solid #999;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 5px;
+        color: #943;
+    }
